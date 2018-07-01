@@ -4,25 +4,25 @@ export const pizzaOptions = {
             {
                 id: 1,
                 size: 20,
-                name: "NY Style Small",
+                name: "NY Style Small - 20cm",
                 price: 6.25
             },
             {                
                 id: 2,
                 size: 25,
-                name: "NY Style Medium",
+                name: "NY Style Medium - 25cm",
                 price: 8.99
             },
             {
                 id: 3,
                 size: 30,
-                name: "NY Style Large",
+                name: "NY Style Large - 30cm",
                 price: 11.49,
             },
             {
                 id: 4,
                 size: 35, 
-                name: "NY Style Family",
+                name: "NY Style Family - 35cm",
                 price: 13.49
             }
         ],
