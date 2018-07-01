@@ -98,7 +98,7 @@ class PizzaSelectorContainer extends PureComponent {
     render() {
         return (
         <div> 
-            <Grid container spacing={16}>
+            <Grid container spacing={8}>
                 <Grid item lg={8}>
                     <PizzaSelector 
                         handleChange={this.handleChange} 
@@ -108,7 +108,7 @@ class PizzaSelectorContainer extends PureComponent {
                     />
                 </Grid>
                 <Grid item xs={4} >
-                    <PizzaSummary pizzaPrice={this.calcPizzaPrice()}/>
+                    <PizzaSummary pizzaPrice={this.calcPizzaPrice()} pizza={this.props.pizza}/>
                 </Grid>
             </Grid>
 

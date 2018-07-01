@@ -7,10 +7,15 @@ import { Typography } from '@material-ui/core';
 
 class PizzaSummary extends PureComponent {
     render() {
-        console.log(this.props)
+        const { pizza } = this.props 
         return (
             <Card>
                 <CardContent>
+                    <Typography variant="title">Your pizza</Typography>
+                    {pizza.base && <Typography>Base: {pizza.base}</Typography>}
+                    {pizza.sauce && <Typography>Sauce: {pizza.sauce}</Typography>}
+                    {pizza.toppings.length > 0 && <Typography>Toppings: {pizza.toppings.join(", ")}</Typography>}
+                    {pizza.deliveryOption && <Typography>Delivery option: {pizza.deliveryOption}</Typography>}
                     <Typography>Total price: {this.props.pizzaPrice}</Typography>
                 </CardContent>
             </Card>
