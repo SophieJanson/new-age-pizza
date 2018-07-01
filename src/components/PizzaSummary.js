@@ -12,7 +12,7 @@ class PizzaSummary extends PureComponent {
         return (
             <Card>
                 <CardContent>
-                    <Typography variant="title" gutterBottom="true">Your pizza</Typography>
+                    <Typography variant="title" gutterBottom={true}>Your pizza</Typography>
                     {pizza.base &&
                         <Typography align="left"><b>Base:</b> {pizza.base}</Typography>
                     }
@@ -24,7 +24,7 @@ class PizzaSummary extends PureComponent {
                     }
                     {pizza.delivery && 
                     <div>
-                        <Typography align="left" gutterBottom="true"><b>Delivery option:</b> {pizza.delivery}</Typography>
+                        <Typography align="left" gutterBottom={true}><b>Delivery option:</b> {pizza.delivery}</Typography>
                         <Divider />
                     </div>
                     }

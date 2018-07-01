@@ -12,7 +12,7 @@ class App extends Component {
         <main>
           <AppBar position="static" color="default" >
             <Toolbar>
-              <Typography variant="title" color="secondary" gutterBottom="true">
+              <Typography variant="title" color="secondary">
                 New Age Pizza
               </Typography>
             </Toolbar>
