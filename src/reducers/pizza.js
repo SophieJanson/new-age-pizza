@@ -14,10 +14,10 @@ const reducer = (state = initialState, action = {}) => {
 }
 
 const initialState = {
-    base: "",
-    sauce: "",
+    base: null,
+    sauce: null,
     toppings: [],
-    deliveryOption: "Regular",
+    delivery: "Regular",
 }
 
 export default reducer

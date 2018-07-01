@@ -1,6 +1,4 @@
 import React, { PureComponent } from 'react'
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControl from '@material-ui/core/FormControl';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormHelperText from '@material-ui/core/FormHelperText';
@@ -31,7 +29,7 @@ export default class CheckboxSelector extends PureComponent{
                         checked={this.state.checked.includes(item)}
                         value={item}
                         disabled={ 
-                            this.state.checked.length === parseInt(this.props.limit) && 
+                            this.state.checked.length === parseInt(this.props.limit, 10) && 
                             !this.state.checked.includes(item)
                         }
                     />
@@ -43,10 +41,9 @@ export default class CheckboxSelector extends PureComponent{
 
     render() {
         return (
-            <FormGroup
-                onChange={this.handleChange}    
-            >
-                { this.props.pizzaOptions.toppings.map(this.renderItem) }
+            <FormGroup onChange={this.handleChange}>
+                <FormHelperText>{`Select up to ${this.props.limit} options` }</FormHelperText>
+                { this.props.pizzaOptions.map(this.renderItem) }
             </FormGroup>
         )  
     }
