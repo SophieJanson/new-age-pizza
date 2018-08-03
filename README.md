@@ -1,3 +1,5 @@
 # Pizza Configurator Homework
+A React/Redux Pizza configurator which allows you to customize a pizza. 
 
-Interested in a demo? Have a look here: https://maple-crown-90180.herokuapp.com/
+Demo: https://maple-crown-90180.herokuapp.com/
+
